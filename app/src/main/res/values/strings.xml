@@ -108,4 +108,6 @@
     <string name="coco_options_text">This is coco options</string>
     <string name="url_input">image URL</string>
     <string name="url_helper_text">Required</string>
+    <string name="et_password">Password</string>
+    <string name="button_show_image">IMAGE</string>
 </resources>

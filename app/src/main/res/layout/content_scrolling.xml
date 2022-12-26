@@ -49,11 +49,12 @@
                     style="@style/Widget.Material3.Button"
                     />
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_show_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintEnd_toStartOf="@id/btn_buy"
                     app:layout_constraintTop_toBottomOf="@id/img_card"
-                    android:text="@string/button_skip"
+                    android:text="@string/button_show_image"
                     style="@style/Widget.Material3.Button.TextButton"
                     />
                 <ImageView
@@ -132,10 +133,12 @@
             app:icon="@drawable/ic_thumb_up"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_url"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/url_input"
             app:helperText="@string/url_helper_text"
+            app:errorEnabled="true"
             android:layout_margin="@dimen/common_padding_min"
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
             <com.google.android.material.textfield.TextInputEditText
@@ -145,6 +148,21 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="password_toggle"
+            app:helperText="@string/url_helper_text"
+            android:hint="@string/et_password"
+            android:layout_margin="@dimen/common_padding_min"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
