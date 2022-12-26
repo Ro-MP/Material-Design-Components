@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ScrollingActivity"
+    android:backgroundTint="@color/white">
+
+
+
+    <include
+        android:id="@+id/layout_content_scrolling"
+        layout="@layout/content_scrolling" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/teal_700"
+        app:navigationIcon="@drawable/ic_menu"
+        app:menu="@menu/bottom_app_bar"
+        app:navigationIconTint="@color/teal_200"
+        app:hideOnScroll="true"
+        />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/extended_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/fab_text"
+        android:textColor="@color/pink"
+        android:layout_gravity="bottom|end"
+        app:icon="@drawable/ic_add_shopping_cart"
+        app:iconTint="@color/pink"
+        android:contentDescription="@string/fab_description"
+        />
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

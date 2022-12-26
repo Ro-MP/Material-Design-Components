@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_cookie"
+        android:icon="@drawable/ic_cookie"
+        app:showAsAction="always"
+        android:title="@string/title_cookie" />
+
+    <item
+        android:id="@+id/menu_cruelty_free"
+        android:icon="@drawable/ic_cruelty_free"
+        app:showAsAction="ifRoom"
+        android:title="@string/title_cruelty_free" />
+
+    <item
+        android:id="@+id/menu_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        app:showAsAction="ifRoom"
+        android:title="@string/title_dashboard" />
+
+</menu>
